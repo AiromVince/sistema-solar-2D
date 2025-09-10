@@ -1,0 +1,491 @@
+<html>
+<head>
+  <title>Sistema solar</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="/images/favicon (1).ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+  <div id="loader-container">
+    <div class="poster"></div>
+    <div class="gala"></div>
+    <div class="sun3"></div>
+    <div class="mercu3"></div>
+    <div class="jupiter3"></div>
+    <div class="terra3"></div>
+    <div class="loader">
+        <div class="progress-bar"></div>
+    </div>
+</div>
+  <div class="clock" id="clock">
+    <span id="timeDisplay">00:00:00</span> - <span id="dateDisplay">1 de janeiro de 2023</span>
+</div>
+  <div id="yearsDisplay"></div>
+    <div id="zoom">
+      <audio id="milkSound">
+        <source src="sons/galaxias/milk away sound.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="androSound">
+        <source src="sons/galaxias/andromeda sound.mp3" type="audio/mpeg">
+      </audio>
+        <div class='galaxy1' id="milk"></div>
+        <div class='galaxy2' id="andro"></div>
+        <div class='galaxy3'></div>
+        <div class='galaxy4'></div>
+        <div class='galaxy5'></div>
+        <div class='galaxy6'></div>
+        <div class='galaxy7'></div>
+        <div class='galaxy8'></div>
+        <div class='galaxy9'></div>
+        <div class='galaxy10'></div>
+        <div class='galaxy11'></div>
+        <div class='galaxy12'></div>
+        <div class='galaxy13'></div>
+        <div class='galaxy14'></div>
+        <div class='galaxy15'></div>
+        <div class='galaxy16'></div>
+        <div class='galaxy17'></div>
+        <div class="mercury-orbit orbit"></div>
+        <div class="venus-orbit orbit"></div>
+        <div class="terra-orbit orbit"></div>
+        <div class="marte-orbit orbit"></div>
+        <div class="jupiter-orbit orbit"></div>
+        <div class="saturno-orbit orbit"></div>
+        <div class="urano-orbit orbit"></div>
+        <div class="netuno-orbit orbit"></div>
+        <div class="stars-container"></div>
+        <div class="galaxy-container"></div>
+      <div class="sol">
+        <audio id="sunSound">
+          <source src="sons/sunsound.mp3" type="audio/mpeg">
+        </audio>
+        <div class="sol2" id="sun" onclick="infosun()"></div>
+        <audio id="mercurySound">
+          <source src="sons/planetas/mercurysound.mp3" type="audio/mpeg">
+        </audio>
+        <div class="planet planet1 mercurio" id="mercurio">
+          <h1 class="nomes-mercury nomes">mercurio</h1>
+          <span class="touch-mercury touch orbit" onmouseover="changeOrbitColor1()" onmouseout="resetOrbitColor1()"></span>
+          <div class="shadow"></div>
+        </div>
+        <audio id="venusSound">
+          <source src="sons/planetas/venusSound.mp3" type="audio/mpeg">
+        </audio>
+        <div class="planet planet2 venus" id="venus">
+          <h1 class="nomes-venus nomes">venus</h1>
+          <div class="touch-venus touch orbit" onmouseover="changeOrbitColor2()" onmouseout="resetOrbitColor2()"></div>
+        </div>
+        <audio id="terraSound">
+          <source src="sons/planetas/terrasound.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="luaSound">
+          <source src="sons/luas/terra/luasound.mp3" type="audio/mpeg">
+        </audio>
+        <div class="planet3 terra moon" id="terra">
+          <div class="container">
+            <div class="night"></div>
+            <div class="day"></div>
+            <div class="clouds"></div>
+          </div>
+          <h1 class="nomes-earth nomes">terra</h1>
+          <div class="touch-terra touch orbit" onmouseover="changeOrbitColor3()" onmouseout="resetOrbitColor3()"></div>
+          <div class="lua" id="lua">
+            <div class="touch-lua trail touch" onmouseover="changeOrbitColor10()" onmouseout="resetOrbitColor10()"></div>
+          </div>
+          <div class="moon-orbit"></div> 
+        </div>
+        <audio id="marteSound">
+          <source src="sons/planetas/martesound.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="deimosSound">
+          <source src="sons/luas/marte/deimos sound.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="phobosSound">
+          <source src="sons/luas/marte/phobos sounds.mp3" type="audio/mpeg">
+        </audio>
+        <div class="planet4 marte" id="marte">
+          <span class="touch-marte touch orbit" onmouseover="changeOrbitColor4()" onmouseout="resetOrbitColor4()"></span> 
+          <div class="deimos black-planet"  id="deimos">
+            <div class="touch-deimos touch" onmouseover="changeOrbitColor22()" onmouseout="resetOrbitColor22()"></div>
+          </div>
+          <div class="phobos black-planet"  id="phobos">
+            <div class="touch-phobos touch" onmouseover="changeOrbitColor23()" onmouseout="resetOrbitColor23()"></div>
+          </div>
+          <div class="deimos-orbit trail"></div>
+          <div class="phobos-orbit trail"></div>
+          <h1 class="nomes-mars nomes">marte</h1>
+        </div>
+        <audio id="jupiterSound">
+          <source src="sons/planetas/jupitersound.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="ioSound">
+          <source src="sons/luas/jupiter/iosound.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="europaSound">
+          <source src="sons/luas/jupiter/europa sound.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="ganymedesSound">
+          <source src="sons/luas/jupiter/ganymedes sound.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="calistoSound">
+          <source src="sons/luas/jupiter/calisto.mp3" type="audio/mpeg">
+        </audio>
+        <div class="planet5 jupiter" id="jupiter">
+          <div class="touch-jupiter touch orbit" onmouseover="changeOrbitColor5()" onmouseout="resetOrbitColor5()"></div>
+          <div class="io black-planet" id="io">
+            <h2 class="nomes-io nomes">io</h2>
+            <div class="touch-io touch trail" onmouseover="changeOrbitColor11()" onmouseout="resetOrbitColor11()"></div>
+          </div>
+          <div class="ganymedes" id="ganymedes" id=>
+            <div class="touch-ganymedes touch trail" onmouseover="changeOrbitColor12()" onmouseout="resetOrbitColor12()"></div>
+            <h2 class="nomes-ganymedes nomes">ganymedes</h2>
+          </div>
+          <div class="europa" id="europa">
+            <div class="touch-europa touch trail" onmouseover="changeOrbitColor13()" onmouseout="resetOrbitColor13()"></div>
+            <h2 class="nomes-europa nomes">europa</h2>
+          </div>
+          <div class="calisto" id="calisto">
+            <div class="touch-calisto touch trail" onmouseover="changeOrbitColor14()" onmouseout="resetOrbitColor14()"></div>
+            <h2 class="nomes-calisto nomes">calisto</h2>
+          </div>
+          <div class="io-orbit trail"></div>
+          <div class="ganymedes-orbit trail"></div>
+          <div class="europa-orbit trail"></div>
+          <div class="calisto-orbit trail"></div>
+          <h1 class="nomes-jupiter nomes">jupiter</h1>  
+        </div>
+        <audio id="saturnoSound">
+          <source src="sons/planetas/saturnosound.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="mimasSound">
+          <source src="sons/luas/saturno/mimas sound.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="encedalosSound">
+          <source src="sons/luas/saturno/encedalos sound.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="thehtysSound">
+          <source src="sons/luas/saturno/thethys sound.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="rheaSound">
+          <source src="sons/luas/saturno/rhea sound.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="titanSound">
+          <source src="sons/luas/saturno/titan sound.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="dioneSound">
+          <source src="sons/luas/saturno/dione sound.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="lapetusSound">
+          <source src="sons/luas/saturno/lapetus sound.mp3" type="audio/mpeg">
+        </audio>
+        <div class="planet6 saturno" id="saturno">
+          <div class="rings"></div>
+          <div class="touch-saturno touch orbit" onmouseover="changeOrbitColor6()" onmouseout="resetOrbitColor6()"></div>
+          <div class="titan black-planet"  id="titan">
+            <div class="touch-titan touch" onmouseover="changeOrbitColor15()" onmouseout="resetOrbitColor15()"></div>
+            <h2 class="nomes-titan nomes">titan</h2>
+          </div>
+          <div class="enceda black-planet"  id="encedalos">
+            <div class="touch-enceda touch" onmouseover="changeOrbitColor16()" onmouseout="resetOrbitColor16()"></div>
+            <h2 class="nomes-enceda nomes">encedalos</h2>
+          </div>
+          <div class="rhea black-planet"  id="rhea">
+            <div class="touch-rhea touch" onmouseover="changeOrbitColor17()" onmouseout="resetOrbitColor17()"></div>
+            <h2 class="nomes-rhea nomes">rhea</h2>
+          </div>
+          <div class="mimas black-planet"  id="mimas">
+            <div class="touch-mimas touch" onmouseover="changeOrbitColor18()" onmouseout="resetOrbitColor18()"></div>
+            <h2 class="nomes-mimas nomes">mimas</h2>
+          </div>
+          <div class="thethys black-planet"  id="thethys">
+            <div class="touch-thethys touch" onmouseover="changeOrbitColor19()" onmouseout="resetOrbitColor19()"></div>
+          </div>
+          <div class="dione black-planet"  id="dione">
+            <div class="touch-dione touch" onmouseover="changeOrbitColor20()" onmouseout="resetOrbitColor20()"></div>
+            <h2 class="nomes-dione nomes">dione</h2>
+          </div>
+          <div class="lapetus black-planet"  id="lapetus">
+            <div class="touch-lapetus touch" onmouseover="changeOrbitColor21()" onmouseout="resetOrbitColor21()"></div>
+          </div>
+          <div class="titan-orbit trail"></div>
+          <div class="enceda-orbit trail"></div>
+          <div class="rhea-orbit trail"></div>
+          <div class="mimas-orbit trail"></div>
+          <div class="dione-orbit trail"></div>
+          <div class="thethys-orbit trail"></div>
+          <div class="lapetus-orbit trail"></div>
+          <h1 class="nomes-saturny nomes">saturno</h1>
+        </div>
+        <audio id="uranoSound">
+          <source src="sons/planetas/uranosound.mp3" type="audio/mpeg">
+        </audio>
+        <div class="planet7 urano" id="urano">
+          <div class="urano-ring"></div>
+          <div class="touch-urano touch orbit" onmouseover="changeOrbitColor7()" onmouseout="resetOrbitColor7()"></div>
+          <div class="miranda black-planet"  id="miranda">
+            <div class="touch-miranda touch" onmouseover="changeOrbitColor24()" onmouseout="resetOrbitColor24()"></div>
+          </div>
+          <div class="miranda-orbit trail"></div>
+          <h1 class="nomes-urano nomes">urano</h1>
+        </div>
+        <audio id="netunoSound">
+          <source src="sons/planetas/netunosound.mp3" type="audio/mpeg">
+        </audio>
+        <div class="planet8 netuno" id="netuno">
+          <div class="netuno-ring"></div>
+          <h1 class="nomes-neptune nomes">netuno</h1>
+          <div class="touch-netuno touch orbit" onmouseover="changeOrbitColor8()" onmouseout="resetOrbitColor8()"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="buttons-container">
+  <div class="menu" >
+    <div class="btn-exp">
+      <i class="bi bi-list" id="btn-exp"></i>
+    </div>
+    <ul>
+      <li class="item-menu active">
+        <a href="#">
+          <span class="icon"><i class="bi bi-house"></i></span>
+          <span class="txt-link">home</span>
+        </a>
+      </li>
+      <li class="item-menu">
+        <a href="#">
+          <span class="icon"><i class="bi bi-clipboard2-data-fill"></i></span>
+          <span class="txt-link">informações</span>
+        </a>
+      </li>
+      <li class="item-menu">
+        <a href="#">
+          <span class="icon"><i class="bi bi-info-circle"></i></span>
+          <span class="txt-link">sobre</span>
+        </a>
+      </li>
+      <li class="item-menu">
+        <a href="#">
+          <span class="icon">
+            <i class="bi bi-gear" id="configIcon"></i>
+          </span>
+          <span class="txt-link">configurações</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+<div class="box">
+  <div class="slider">
+    <input type="range" min="-27" max="27" step="1" value="1" id="timeSlider" oninput="handleSliderChange(this.value)">
+    <span id="sliderValue">1</span>
+    <button class="toggle-btn" onclick="toggleButtons()"><i class="bi bi-chevron-compact-down"></i></button>
+    <div class="timebtn">
+        <button class="avan"><span class="icon1"><i class="bi bi-fast-forward"></i></span></button>
+        <button class="playAndpause" onclick="togglePlayPause()"><i class="bi bi-pause-circle" id="playAndpause"></i></button>
+        <button class="retro"><span class="icon1"><i class="bi bi-rewind"></i></span></button>
+    </div>
+  </div>
+</div>
+
+
+  <!----painel de configuração------>
+  <div class="config-panel" id="configPanel">
+    <button class="close-button" id="closeConfigPanel"><i class="bi bi-x-circle"></i></button>
+    <div class="op">
+      <h2 >sons</h2>
+      <button class="toggle-button" id="muteButton"><i class="bi bi-toggle-on"></i></button>
+      <h2>orbitas</h2>
+      <button class="toggle-button" id="toggleOrbitsButton"><i class="bi bi-toggle-on"></i></button>
+      <h2>trilha</h2>
+      <button class="toggle-button" id="toggleTrailsButton"><i class="bi bi-toggle-on"></i></button>
+      <h2>drag</h2>
+      <button class="toggle-button" id="toggleDragButton"><i class="bi bi-toggle-on"></i></button>
+      <h2>nomes</h2>
+      <button class="toggle-button" id="toggleNomeButton"><i class="bi bi-toggle-on"></i></button>
+      <h2>satelites</h2>
+      <button class="toggle-button" id="playButton"><i class="bi bi-toggle-off"></i></button>
+      <h2>asteroids</h2>
+      <button class="toggle-button" id="playButton"><i class="bi bi-toggle-off"></i></button>
+      <h2>planetas anão</h2>
+      <button class="toggle-button" id="playButton"><i class="bi bi-toggle-off"></i></button>
+      <h2>cometas</h2>
+      <button class="toggle-button" id="playButton"><i class="bi bi-toggle-off"></i></button>
+      <h2>corrigir bugs</h2>
+      <button class="toggle-button" id="followSunButton"><i class="bi bi-toggle-off"></i></button>
+    </div>
+  </div>
+  <!----painel de configuração------>
+  <!----painel de informações------>
+  <div class="info-panel" id="infoPanel">
+    <button class="close-button2" id="closeInfoPanel"><i class="bi bi-x-circle"></i></button>
+    <h2>Informações Astronomicas</h2>
+    <div class="categorias">
+        <div class="cdeco1"></div>
+        <p class="categoria" data-target="infosol">sol</p>
+        <p class="categoria" data-target="luas">luas</p>
+        <p class="categoria" data-target="planetas">planetas</p>
+        <p class="categoria selecionada" data-target="apod">APOD:nasa</p>
+        <p class="categoria" data-target="asteroids">asteroides</p>
+    </div>
+    <div class="conteudo" id="infosol">
+      <div class="deco1"></div>
+      <div class="deco2"></div>
+      <div class="deco3"></div>
+      <h3 id="info-lasco">As imagens do Sol e os gráfico apresentados permitem uma observação imediata do que está acontecendo com a nossa estrela em tempo quase real. Os gráficos de fluxo de raios X, Índice KP e Vento Solar fornecem em conjunto um quadro instantâneo sobre a atividade solar, instablidade da ionosfera e as consequentes tempestades geomagnéticas.</h3>
+      <article>
+      <h3 id="solar">monitoramento solar</h3>
+      </article>
+      <div class="tabela">
+        <div class="lstext">
+          <h3 id="lasco2"  id="meuElemento">conografo laranja</h3>
+          <h3 id="luz">sol</h3>
+          <h3 id="lasco3">conografo azul</h3>
+        </div>
+        <img class="lascoc2" id="animation1">
+        <button id="pauseButton1"><i class="bi bi-pause-circle"></i></button>
+      </img>
+        <img class="lascoc3" id="animation2">
+        <button id="pauseButton2"><i class="bi bi-pause-circle"></i></button>
+      </img>
+        <img class="suneuv" id="animation3">
+        <button id="pauseButton3"><i class="bi bi-pause-circle"></i></button>
+      </img>
+        <img class="grafic" id="animation4">
+        <span class="deco"></span>
+        <button id="pauseButton4"><i class="bi bi-pause-circle"></i></button>
+      </img>
+      </div>
+    </div>
+    <div class="conteudo" id="luas">
+        <!-- Conteúdo das Novidades -->
+    </div>
+    <div class="conteudo" id="planetas">
+      <!-- Abas para diferentes planetas -->
+      <p class="sub-categoria-planeta" data-target="terra">Terra</p>
+      <p class="sub-categoria-planeta" data-target="marte">Marte</p>
+      <button id="botao-voltar">Voltar</button>
+
+      <div class="sub-conteudo-planeta" id="terra">
+        <iframe class="clima" src="https://embed.windy.com/embed2.html?lat=-9.752&lon=-44.648&detailLat=-9.752&detailLon=-44.648&width=650&height=450&zoom=5&level=surface&overlay=temp&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"></iframe>
+      </div>
+  
+      <div class="sub-conteudo-planeta" id="marte">
+          <h3>Informações sobre Marte</h3>
+          <p>Texto sobre Marte...</p>
+      </div>
+  </div>
+  
+    <div class="conteudo" id="apod">
+      <h3 id="apodTitle"></h3>
+      <img id="apodImage" src="" alt="Astronomy Picture of the Day">
+      <div id="apodText"></div>
+    </div> 
+    <div class="conteudo" id="asteroids">
+      <h3 id="asteroidTitle"></h3>
+      <div id="asteroidList" class="asteroid-info"></div>
+      <label for="dataEscolhida" class="dataesc">Escolha a data:</label>
+      <input type="date" id="dataEscolhida" name="dataEscolhida">
+      <button id="buscarAsteroides">Buscar Asteroides</button>
+  </div>
+</div>
+
+
+  <!----painel de informações------>
+    <ul class="buttons-list"> 
+      <li>
+        <button class="category-button" onclick="resetTime()">tempo real</button>
+      </li>
+      <li>
+        <button class="category-button" id="seguirBotao">Seguir</button>
+        <ul class="sub-list">
+          <li><button id="followMercurioButton" class="follow-button" data-following="false">Seguir mercurio</button></li>
+          <li><button id="followVenusButton" class="follow-button" data-following="false" style="background: rgb(163, 163, 1);">Seguir Vênus</button></li>
+          <li><button id="followEarthButton" class="follow-button" data-following="false" style="background: rgb(0, 24, 145);">Seguir Terra</button></li>
+          <li><button id="followMoonButton" class="follow-button" data-following="false" style="background: rgb(1, 21, 120);">Seguir Lua</button></li>
+          <li><button id="followMarsButton" class="follow-button" data-following="false" style="background: rgb(213, 1, 1);">Seguir Marte</button></li>
+          <!--------luas de marte---------->
+          <li><button id="followDeimosButton" class="follow-button" data-following="false" style="background: rgb(164, 0, 0);">Seguir Deimos</button></li>
+          <li><button id="followPhobosButton" class="follow-button" data-following="false" style="background: rgb(164, 0, 0);">Seguir Phobos</button></li>
+          <!--------luas de marte---------->
+          <li><button id="followJupiterButton" class="follow-button" data-following="false" style="background: rgb(233, 182, 1);">Seguir jupiter</button></li>
+          <!--------luas de jupiter---------->
+          <li><button id="followIoButton" class="follow-button" data-following="false" style="background: rgb(187, 146, 0);">Seguir io</button></li>
+          <li><button id="followEuropaButton" class="follow-button" data-following="false"  style="background: rgb(187, 146, 0);">Seguir europa</button></li>
+          <li><button id="followGanymedesButton" class="follow-button" data-following="false"  style="background: rgb(187, 146, 0);">Seguir ganymedes</button></li>
+          <li><button id="followCalistoButton" class="follow-button" data-following="false"  style="background: rgb(187, 146, 0);">Seguir calisto</button></li>
+          <!--------luas de jupiter---------->
+          <li><button id="followSaturnoButton" class="follow-button" data-following="false" style="background: rgb(255, 174, 0);">Seguir saturno</button></li>
+          <!------luas de saturno----->
+          <li><button id="followTitanButton" class="follow-button" data-following="false" style="background: rgb(219, 150, 0);">Seguir titan</button></li>
+          <li><button id="followEncedaloButton" class="follow-button" data-following="false" style="background: rgb(219, 150, 0);">Seguir encedalo</button></li>
+          <li><button id="followRheaButton" class="follow-button" data-following="false" style="background: rgb(219, 150, 0);">Seguir rhea</button></li>
+          <li><button id="followMimasButton" class="follow-button" data-following="false" style="background: rgb(219, 150, 0);">Seguir mimas</button></li>
+          <li><button id="followThethysButton" class="follow-button" data-following="false" style="background: rgb(219, 150, 0);">Seguir thehtys</button></li>
+          <li><button id="followDioneButton" class="follow-button" data-following="false" style="background: rgb(219, 150, 0);">Seguir dione</button></li>
+          <li><button id="followLapetusButton" class="follow-button" data-following="false" style="background: rgb(219, 150, 0);">Seguir lapetus</button></li>
+          <!------luas de saturno----->
+          <li><button id="followUranoButton" class="follow-button" data-following="false" style="background: rgb(0, 188, 209);">Seguir urano</button></li>
+          <!------luas de urano----->
+          <li><button id="followMirandaButton" class="follow-button" data-following="false" style="background: rgb(0, 148, 164);">Seguir miranda</button></li>
+          <!------luas de urano----->
+          <li><button id="followNetunoButton" class="follow-button" data-following="false" style="background: rgb(0, 92, 212);">Seguir netuno</button></li>
+          <!------LUAS-------->
+        </ul>
+      </li>
+    </ul>
+</div>
+<audio id="buttonClickSound">
+  <source src="sons/botao.mp3" type="audio/mpeg">
+</audio>
+</body>
+  <script src="obitsdetail.js"></script>
+  <script src="script.js"></script>
+  <script src="positions.js"></script>
+  <script>
+      var jsonUrls = [
+          "https://services.swpc.noaa.gov/products/animations/lasco-c3.json",
+          "https://services.swpc.noaa.gov/products/animations/lasco-c2.json",
+          "https://services.swpc.noaa.gov/products/animations/suvi-primary-195.json",
+          "https://services.swpc.noaa.gov/products/animations/enlil.json"
+      ];
+
+      jsonUrls.forEach((jsonUrl, index) => {
+          fetch(jsonUrl)
+              .then(response => response.json())
+              .then(linksAnimacao => {
+                  (function (currentIndex) {
+                      exibirProximoQuadro(linksAnimacao, currentIndex);
+                  })(index);
+              });
+      });
+
+      function exibirProximoQuadro(linksAnimacao, index) {
+          var frameIndex = 0;
+          var animationElement = document.getElementById(`animation${index + 1}`);
+          var pauseButton = document.getElementById(`pauseButton${index + 1}`);
+          var isPaused = false;
+
+          pauseButton.addEventListener("click", function () {
+              isPaused = !isPaused;
+              if (!isPaused) {
+                  mostrarQuadro();
+              }
+          });
+
+          function mostrarQuadro() {
+              if (isPaused) {
+                  // Se estiver pausado, não avance para o próximo quadro
+                  return;
+              }
+
+              animationElement.src = "https://services.swpc.noaa.gov" + linksAnimacao[frameIndex].url;
+              frameIndex = (frameIndex + 1) % linksAnimacao.length;
+              setTimeout(mostrarQuadro, 100);
+          }
+
+          mostrarQuadro();
+      }
+  </script>
+</html>
