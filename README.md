@@ -62,9 +62,39 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias e conceitos:
 
 ---
 
+## O que aprendi com o projeto Sistema Solar 2D
+
+Durante o desenvolvimento deste projeto, aprendi e pratiquei diversas habilidades em front-end e interatividade:
+
+### **HTML5**
+- Criei a estrutura completa da página, incluindo elementos para planetas, o Sol, órbitas, menus e painéis de informação.  
+- Entendi como organizar semanticamente os elementos para facilitar a manipulação via CSS e JavaScript.
+
+### **CSS3**
+- Estilizei planetas, o Sol e as órbitas, aplicando cores, sombras e efeitos visuais.  
+- Aprendi a usar `transform`, `opacity` e `scale` para animações suaves.  
+- Trabalhei com classes dinâmicas para mostrar ou ocultar elementos conforme a interação do usuário (`hide-orbit`, `hide-trail`, `zoomed-out`).
+
+### **JavaScript (Vanilla JS)**
+- **Transformações e Zoom:** manipulei `translate` e `scale` para criar efeitos de movimentação e aproximação do sistema solar, incluindo drag-and-pan.  
+- **Eventos e Interatividade:** usei `mousedown`, `mousemove`, `mouseup`, `wheel` e `click` para interações complexas com mouse e teclado.  
+- **Animações e Tracking:** implementei `requestAnimationFrame` para seguir planetas e suavizar movimentos da tela.  
+- **Manipulação de Estilos Dinâmicos:** ajustei tamanhos, opacidade e posições de planetas, órbitas e nomes baseado no zoom e em ações do usuário.  
+- **Áudio Interativo:** adicionei sons aos planetas e galáxias, com controle de play, pause e mute.  
+- **Painéis e Menus:** desenvolvi menus laterais, painéis de configuração e informação, e toggle buttons para interações dinâmicas.  
+- **APIs Externas:** integrei dados da NASA APOD e NEO, além de tradução de textos via Google Translate API.  
+- **Simulação Temporal:** implementei controles para pausar, avançar e retroceder a simulação do movimento planetário, incluindo slider de tempo e multiplicador de velocidade.
+
+### **UX/UI Interativo**
+- Criei botões para seguir planetas, exibir trilhas e nomes, melhorando a experiência do usuário.  
+- Desenvolvi um loader inicial com progress bar.  
+- Apliquei feedback visual com sombras, bordas neon e animações suaves, tornando a interação mais agradável.
+
+---
+
 ### **IMPORTANTE**
 
-- O projeto ainda está em faze de desenvolvimento e tem muitas coisas faltando, alem de bugs e problemas visuais que com o tempo irei melhorando!
+- O projeto ainda está em fase de desenvolvimento e tem muitas coisas faltando, alem de bugs e problemas visuais que com o tempo irei melhorando!
 
 ---
 
