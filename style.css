@@ -8,7 +8,7 @@
 
 html,
 body {
-  background: url("/images/espaço-geral/espaço.jpg");
+  background: url("./images/espaço-geral/espaço.jpg");
   margin: 0px;
   padding: 0px;
   overflow: hidden;
@@ -61,7 +61,7 @@ body {
 
 
 .poster{
-  background-image: url('/images/solar-system-2D-23-02-2024__1_-removebg-preview.png');
+  background-image: url('./images/solar-system-2D-23-02-2024__1_-removebg-preview.png');
   width: 100%;
   height: 100%;
   position: absolute;
@@ -307,7 +307,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   transform-origin: 30% 55%;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/milky_way.png');
+  background-image: url('./images/espaço-geral/milky_way.png');
   background-repeat: no-repeat;
   transform: perspective(1000000vw) scale(4000);
 }
@@ -318,7 +318,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/Andromeda_galaxy.png');
+  background-image: url('./images/espaço-geral/Andromeda_galaxy.png');
   background-repeat: no-repeat;
   transform-origin: -900% -300%;
   transform: perspective(1000px) scale(5000);
@@ -329,7 +329,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/Triangulum.png');
+  background-image: url('./images/espaço-geral/Triangulum.png');
   background-repeat: no-repeat;
   transform-origin: -800% -1000%;
   transform: perspective(1000px) scale(3000);
@@ -340,7 +340,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/IC-10.jpg');
+  background-image: url('./images/espaço-geral/IC-10.jpg');
   background-repeat: no-repeat;
   transform-origin: -10000% 350%;
   transform: perspective(1000px) scale(500);
@@ -351,7 +351,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/grande\ nuvem\ de\ magalhoes.png');
+  background-image: url('./images/espaço-geral/grande\ nuvem\ de\ magalhoes.png');
   background-repeat: no-repeat;
   transform-origin: 1000% -1000%;
   transform: perspective(1000px) scale(500);
@@ -362,7 +362,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/nuvem-magalhoes.jpg');
+  background-image: url('./images/espaço-geral/nuvem-magalhoes.jpg');
   background-repeat: no-repeat;
   transform-origin: 900% -1500%;
   transform: perspective(1000px) scale(450);
@@ -373,7 +373,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/NGC\ 3109.jpg');
+  background-image: url('./images/espaço-geral/NGC\ 3109.jpg');
   background-repeat: no-repeat;
   transform-origin: 3500% 2000%;
   transform: perspective(1000px) scale(1000);
@@ -384,7 +384,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/draco\ dwrf.png');
+  background-image: url('./images/espaço-geral/draco\ dwrf.png');
   background-repeat: no-repeat;
   transform-origin: -1200% 800%;
   transform: perspective(1000px) scale(800);
@@ -395,7 +395,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/galaxia\ do\ escultor.jpg');
+  background-image: url('./images/espaço-geral/galaxia\ do\ escultor.jpg');
   background-repeat: no-repeat;
   transform-origin: 150% -1000%;
   transform: perspective(1000px) scale(1000);
@@ -406,7 +406,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/NGC\ 185.jpg');
+  background-image: url('./images/espaço-geral/NGC\ 185.jpg');
   background-repeat: no-repeat;
   transform-origin: -3500% -700%;
   transform: perspective(1000px) scale(1000);
@@ -417,7 +417,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/NGC\ 147.jpg');
+  background-image: url('./images/espaço-geral/NGC\ 147.jpg');
   background-repeat: no-repeat;
   transform-origin: -4000% -1000%;
   transform: perspective(1000px) scale(1000);
@@ -428,7 +428,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/Antlia_Dwarf.jpg');
+  background-image: url('./images/espaço-geral/Antlia_Dwarf.jpg');
   background-repeat: no-repeat;
   transform-origin: 3700% 2050%;
   transform: perspective(1000px) scale(900);
@@ -439,7 +439,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/Anã\ da\ fenix.jpg');
+  background-image: url('./images/espaço-geral/Anã\ da\ fenix.jpg');
   background-repeat: no-repeat;
   transform-origin: 3700% -8000%;
   transform: perspective(1000px) scale(500);
@@ -450,7 +450,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/IC\ 1613.jpg');
+  background-image: url('./images/espaço-geral/IC\ 1613.jpg');
   background-repeat: no-repeat;
   transform-origin: -3800% -9000%;
   transform: perspective(1000px) scale(500);
@@ -461,7 +461,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/galaxia\ de\ barnard.jpg');
+  background-image: url('./images/espaço-geral/galaxia\ de\ barnard.jpg');
   background-repeat: no-repeat;
   transform-origin: -1200% -2500%;
   transform: perspective(1000px) scale(1000);
@@ -472,7 +472,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/sextants\ A.jpg');
+  background-image: url('./images/espaço-geral/sextants\ A.jpg');
   background-repeat: no-repeat;
   transform-origin: 3000% 5000%;
   transform: perspective(1000px) scale(1000);
@@ -483,7 +483,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   height: 20000000000000px;
   background-size: cover;
   border-radius: 50%;
-  background-image: url('/images/espaço-geral/Sextans\ B.jpg');
+  background-image: url('./images/espaço-geral/Sextans\ B.jpg');
   background-repeat: no-repeat;
   transform-origin: 2500% 5500%;
   transform: perspective(1000px) scale(1000);
@@ -2526,7 +2526,7 @@ article {
 .urano-ring{
   width: 880px;
   height: 880px;
-  background: url("/images/urano\ ring.png");
+  background: url("./images/urano\ ring.png");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
@@ -2556,7 +2556,7 @@ article {
 .netuno-ring{
   width: 1000px;
   height: 1000px;
-  background: url("/images/netuno\ rings.png");
+  background: url("./images/netuno\ rings.png");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
@@ -2645,7 +2645,7 @@ article {
 .ganymedes {
   width: 47px;
   height: 47px;
-  background: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0) 50%), url('/images/luas/luasjupiter/ganymede.jpg');
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0) 50%), url('./images/luas/luasjupiter/ganymede.jpg');
   margin-left: -9px;
   margin-top: 121px;
   z-index: 1;
@@ -2673,7 +2673,7 @@ article {
   width: 51.1px;
   height: 50px;
   z-index: 1;
-  background: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0) 50%), url('/images/luas/luasjupiter/calisto.png');
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0) 50%), url('./images/luas/luasjupiter/calisto.png');
   border-radius: 50%;
   margin-left: -600px;
   margin-top: -309.5px;
@@ -2777,9 +2777,9 @@ article {
 /*luas saturno*/
 /*luas urano*/
 .miranda{
-  width: 4.7px;
-  height: 4.7px;
-  background: url('/images//luas/luasurano/miranda.jpeg');
+  width: 47px;
+  height: 47px;
+  background: url('./images/luas/luasurano/miranda.png');
   border-radius: 50%;
   box-shadow: inset -4.5px 0px 5px black;
   background-position: center;
@@ -2808,7 +2808,7 @@ article {
   z-index: 999999999;
   background-size: cover;
   background-position: center;
-  background-image: url("images/sun_present.png");
+  background-image: url("./images/sun_present.png");
   top: -10000px;
   left: 1000px;
   cursor: pointer;

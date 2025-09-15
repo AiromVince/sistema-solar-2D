@@ -79,7 +79,7 @@ function checkZoomLevel1() {
   } else {
     zoomContainer.classList.remove('zoomed-out');
     [galaxyImage].forEach(el => el.classList.add('zoomed-out'));
-    document.body.style.background = 'url("/images/espaço-geral/espaço.jpg")';
+    document.body.style.background = 'url("./images/espaço-geral/espaço.jpg")';
   }
 }
 
@@ -419,7 +419,7 @@ followButtons.forEach(function(button) {
   });
 });
 
-var audio = new Audio('/sons/espaço profundo.mp3');
+var audio = new Audio('./sons/espaço profundo.mp3');
 audio.volume = 1;
 
 audio.addEventListener('ended', function() {

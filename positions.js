@@ -352,8 +352,8 @@ function updateSunColor(elapsedTime) {
     const sunElement = document.querySelector('.sol2');
     const initialColor = [255, 255, 255];
     const finalColor = [255, 0, 0];
-    const initialImage = '/images/sun_present.png';
-    const finalImage = '/images/sun_presente.jpg';
+    const initialImage = './images/sun_present.png';
+    const finalImage = './images/sun_presente.jpg';
 
     const waitTime = 5 * millionYearsMS;
     const redPhase = 0.1 * millionYearsMS;
