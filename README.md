@@ -98,9 +98,10 @@ Durante o desenvolvimento deste projeto, aprendi e pratiquei diversas habilidade
 
 ---
 
-## Como Usar
+## Como Usar ()
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/AiromVince/sistema-solar-2D.git
+
+- Pode ser necessario desativar o Ant Virus, pois existem API sendo usadas no projeto, e o Windows pode interpretar como ameaça.
+- Baixe o arquivo zip, extraia e abra o (`index.html`) com qualquer navegador para poder usar!
 
